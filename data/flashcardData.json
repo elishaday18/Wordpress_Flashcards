@@ -3,30 +3,203 @@
         "title": "Wordpress Flashcards",
         "cards": [
             {
-                "question": "What language are Express apps written in?",
-                "hint": "It starts with a \"J\"",
-                "answer": "JavaScript"
+                "question": "Which one of the following files is located in the root of the Wordpress installation directory and contains your website's setup details, such as database connection information?",
+                "hint": "It starts with  \"wp\"",
+                "answer": "wp-config.php"
             },
             {
-                "question": "What is one way a website can store data in a user's browser?",
-                "hint": "They are delicious with milk",
-                "answer": "Cookies"
+                "question": "What are Wordpress hooks?",
+                "hint": "",
+                "answer": "Ways to change the default behavior of Wordpress."
             },
             {
-                "question": "What is a common way to shorten the response object's name inside middleware?",
+                "question": "Which of the following is not a default image size in WP?",
                 "hint": "It has the same abbreviation as \"resolution\"",
-                "answer": "res"
+                "answer": "Small SIze"
             },
             {
-                "question": "How many different values can booleans have?",
-                "hint": "Think: binary",
-                "answer": "2"
+                "question": "......make it possible for a person to have one avatar across the entire web.",
+                "hint": "Avatars, Gravatars, SMileys, WIdgets, None of the above",
+                "answer": "Gravatars"
             },
             {
-                "question": "Which HTML element can contain JavaScript?",
-                "hint": "It starts with an \"s\"",
-                "answer": "<script>"
+                "question": "What is the default table prefix in WP?",
+                "hint": "_wp, w_, wp_, wp-",
+                "answer": "wp_"
+            },
+            {
+                "question": "Which of the following is not a default user role in Wordpress?",
+                "hint": "Blogger, author, sebscriber, contributor",
+                "answer": "Blogger"
+            },
+            {
+                "question": "A ...... is a globally recognized avatar.",
+                "hint": "alias, alter ego, gravatar, site_avatar",
+                "answer": "gravatar"
+            },
+            {
+                "question": "WHich of the following html tags are not allowed to be used in a post comment?",
+                "hint": "NOTE:more than one. code, form, img, strike, table",
+                "answer": "form, img, table"
+            },
+            {
+                "question": "Which option allows you to style each list item background or Wordpress Navigation seperately?",
+                "hint": "",
+                "answer": "Nav li:nth-child(1).current-menu-item {background-color:red;}   Nav li:nth-child(2).current-menu-item {background-color:blue;}   Nav li:nth-child(3).current-menu-item {background-color:green;}"
+            },
+            {
+                "question": "Which constant is not recognized in wp-config.php",
+                "hint": "WP-SITEURL, WP_CONTENT_DIR, WP_CONTENT_URL, WP_HOME_URL",
+                "answer": "WP_HOME_URL"
+            },
+            {
+                "question": "Select all the default taxonomies in Wordpress",
+                "hint": "post_category, post_tag, link_category, product_tag, post_format, category",
+                "answer": "post_tag, link_category, post_format, category"
+            },
+            {
+                "question": "Where are plugin options stored in Wordpress?",
+                "hint": "",
+                "answer": "They are stored in WP Database."
+            },
+            {
+                "question": "What is a permalink?",
+                "hint": "",
+                "answer": "Permalinks are the permanent URLs to your individual weblog posts, as well as categories and other lists of weblog postings."
+            },
+            {
+                "question": "Which Wordpress system can be used to temporarily store information?",
+                "hint": "Options, meta tables, transients, The REST API",
+                "answer": "Transients"
+            },
+            {
+                "question": "What is a Wordpress multisite?",
+                "hint": "a kind of feature",
+                "answer": "WP configuration feature that supports multple sites"
+            },
+            {
+                "question": "A theme _____ acts like a plugin and, if present in your theme, is automatically loaded during Wordpress initialization.",
+                "hint": "Bootsrap file, functions fule, plugin file, setup file, stylesheet",
+                "answer": "functions file"
+            },
+            {
+                "question": "What does Wordpress use to control user access to different features?",
+                "hint": "Username, access tokens, role, cookies",
+                "answer": "Role"
+            },
+            {
+                "question": "In a manual installion , wp-config-sample.php should be renamed to __.",
+                "hint": "wp-___.php?",
+                "answer": "wp-config.php"
+            },
+            {
+                "question": "A wordpress _______ is a colletion of files that work together to produce a graphical interface with an underlying unifying design for a weblog.",
+                "hint": "layout, library, plug-in, theme, widget",
+                "answer": "theme"
+            },
+            {
+                "question": "What is the default site update service that Wordpress automatically notifies when you publish a new post?",
+                "hint": "",
+                "answer": "http://rpc.pingomatic.com"
+            },
+            {
+                "question": "Is it possible to programmatically create posts?",
+                "hint": "",
+                "answer": "Yes, with wp_insert_post() function"
+            },
+            {
+                "question": "What is true about wp_mail() function?",
+                "hint": "",
+                "answer": "A true return value does not automatically mean that the user recieved the email successfully, for this function to work, the settings SMTP and setup_port (default: 25) need to be set in your php.ini file"
+            },
+            {
+                "question": "What is the corect way to register shortcode?",
+                "hint": "",
+                "answer": "function foobar_func($atts){return 'foo and bar';}add_shortcode('foobar', 'foobar_func');"
+            },
+            {
+                "question": "What can the Contributer role do?",
+                "hint": "Moderate comments, publish posts, edit posts, edit pages",
+                "answer": "edit posts"
+            },
+            {
+                "question": "_____ are condensed summaries of your blog posts.",
+                "hint": "blurns, excerpts, hints, tweets, non of the above",
+                "answer": "excerpts"
+            },
+            {
+                "question": "Themes typicaly reside in the _______ directory.",
+                "hint": "wp-content/?",
+                "answer": "wp-content/themes"
+            },
+            {
+                "question": "Which of the following post types are by default available in Wordpress installation",
+                "hint": "post, page, blog, media, archive, category",
+                "answer": "post and page"
+            },
+            {
+                "question": "What is the difference between the wp_title and the_title tags?",
+                "hint": "",
+                "answer": "wp_title() function is for use outside 'The Loop' to dispay the title of a page. the_title() on the other had is used within the 'The Loop'."
+            },
+            {
+                "question": "What are the common features of the following functions: next_post, previous_post, link_pages, the_author_url, wp_get_link?",
+                "hint": "",
+                "answer": "They are all deprecated"
+            },
+            {
+                "question": "What database does wordpress use?",
+                "hint": "notes, postgreSQL, mySQL, oracle",
+                "answer": "MySQL"
+            },
+            {
+                "question": "How do you enable the network setup menu item(enable multisite) in wordpress?",
+                "hint": "",
+                "answer": "set WP_ALLOW_MULTISITE as true in wp-config.php"
+            },
+            {
+                "question": "how do you enable the debug mode in WP",
+                "hint": "",
+                "answer": "By setting WP_DEBUG as true in wp-config.php"
+            },
+            {
+                "question": "Where can you change the timezone used by WP in the dashboard",
+                "hint": "In settings > ?",
+                "answer": "In settings > general"
+            },
+            {
+                "question": "______ is the ability for readers to respond to articles written in your blog.",
+                "hint": "comment posting, comment rating, comment spamming, feedback posting, none of the above",
+                "answer": "comment posting"
+            },
+            {
+                "question": "Which of the following is not a WP role",
+                "hint": "system, subscriber, administrator, editor",
+                "answer": "system"
+            },
+            {
+                "question": "What does the wp_rand() function do?",
+                "hint": "gets a random post id, gets a random category id, generates a random post id for wp_insert_posrt() function, generates a random number",
+                "answer": "generates a random number"
+            },
+            {
+                "question": "Pick the default template tag(s)",
+                "hint": "the_field(), wp_title(), the_title(), wp_field()",
+                "answer": "wp_title(), the_title()"
+            },
+            {
+                "question": "Wordpress uses a _____ in conjunction with the mod_rewrite Apache module to produce permalinks.",
+                "hint": "a .config file, an .htaccess file, an xpm file, an xml file, none of these",
+                "answer": "an .htaccess file"
+            },
+            {
+                "question": "A minimal theme consists of what two files",
+                "hint": "style.css and functions.php, style.css and index.php, style.css and template.php, template.php and index.php, theme.css and homepage.php",
+                "answer": "style.css and index.php"
             }
+    
+            
+
         ]
     }
 }
